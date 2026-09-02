@@ -53,29 +53,29 @@ export const technologies = [
 
 export const experience = [
   {
-    year: "2026 — PRESENT",
-    role: "SOFTWARE DEVELOPER STUDENT",
-    company: "SMK IDN BOGOR",
+    year: " 26 - 30 APR 2026",
+    role: "Teacher",
+    company: "SMA BUAH HATI",
     description:
       "Learning software engineering, web development, databases, and modern application architecture.",
     // Tambahkan foto dokumentasi nanti, contoh: ["/documentation/experience-idn-1.jpg"]
-    documentation: [],
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 143932.png"],
   },
   {
-    year: "2025",
-    role: "WEB DEVELOPER",
-    company: "SCHOOL PROJECTS",
+    year: "18 - 20 NOV 2025",
+    role: "Teacher",
+    company: "ISLAMIC SCHOOL ADZKA",
     description:
       "Built front-end interfaces and Laravel-based web applications while practicing clean UI and database integration.",
-    documentation: [],
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 144050.png"],
   },
   {
-    year: "2025",
-    role: "CYBER_SECURITY",
-    company: "SELF LEARNING",
+    year: " 29 July - 1 AGUST 2026",
+    role: "Teacher",
+    company: "SMA MAN 4 JAKSEL",
     description:
       "Exploring Linux, networking fundamentals, secure application practices, and basic system administration.",
-    documentation: [],
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 134859.png"],
   },
 ];
 
