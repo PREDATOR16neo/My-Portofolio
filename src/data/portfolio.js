@@ -85,7 +85,7 @@ export const projects = [
     title: "PORTOFOLIO LAMINE YAMAL",
     stack: ["HTML", "CSS"],
     description:
-      "A school management system concept for handling students, attendance, and school data.",
+      "A frontend UI concept for a school management system, designed to organize student information and track attendance records.",
     type: "WEB FRONT END",
     documentation: ["/documentation/portfoliocanvaweb.jpg"],
   },
@@ -94,7 +94,7 @@ export const projects = [
     title: "Company Profile",
     stack: ["HTML", "CSS"],
     description:
-      "A dark terminal-style landing page with a cyber security visual direction.",
+      "A dark-themed landing page featuring a terminal-style interface and cybersecurity-inspired visuals.",
     type: "FRONT_END",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 100746.png"],
   },
@@ -103,7 +103,7 @@ export const projects = [
     title: "E - Report",
     stack: ["JS", "HTML", "CSS", 'BOOTSTRAP'],
     description:
-      "A terminal-inspired task manager built to practice logic, commands, and state handling.",
+      "A web application built with a unique terminal aesthetic to practice core JavaScript logic, command execution, and state handling.",
     type: "TOOL",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 100957.png"],
   },
@@ -112,7 +112,7 @@ export const projects = [
     title: "WEBSITE TECHNOLOGY STORE",
     stack: ["HTML", "CSS", "JS", 'BOOTSTRAP'],
     description:
-      "E-commerce architecture practice focused on products, users, carts, and database relationships.",
+      "An e-commerce architecture project focused on managing product catalogs, user accounts, shopping carts, and database relationships.",
     type: "FRONT END",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 101123.png"],
   },
@@ -121,7 +121,7 @@ export const projects = [
     title: "E - COMMERCE",
     stack: ["HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND'],
     description:
-      "Experimental dashboard interface inspired by futuristic data visualization systems.",
+      "An experimental dashboard interface designed with inspiration from futuristic data visualization systems.",
     type: "UI",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102104.png"],
   },
@@ -130,7 +130,7 @@ export const projects = [
     title: "E-LIBRARY",
     stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
     description:
-      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+      "A full-stack digital library application built to manage book catalogs, authors, genres, and cover image uploads.",
     type: "FULL_STACK",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102254.png"],
   },
@@ -139,7 +139,7 @@ export const projects = [
     title: "Pay Roll App",
     stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
     description:
-      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+      "A web-based payroll system built to manage employee records, automate salary calculations, and generate financial reports.",
     type: "FULL_STACK",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102536.png"],
   },
@@ -148,16 +148,16 @@ export const projects = [
     title: "Note Pad App",
     stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
     description:
-      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+      "A digital note-taking application that allows users to create, store, and seamlessly manage personal text notes with a responsive interface.",
     type: "FULL_STACK",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102634.png"],
   },
   {
     id: "009",
-    title: "Note Pad App",
+    title: "Mini Server App",
     stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
     description:
-      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+      "A prototype dashboard application for small-scale server management, designed to monitor system status and display basic data visualizations.",
     type: "FULL_STACK",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102725.png"],
   },
@@ -165,13 +165,13 @@ export const projects = [
 
 export const certificates = [
   {
-    id: "0x8F9A",
-    title: "ADVANCED WEB DEVELOPMENT",
-    issuer: "IDN / LEARNING PROGRAM",
-    level: "LEVEL_3_SECURITY",
-    hash: "A9B2...",
-    year: "2026",
-    documentation: [],
+    id: "MS/28/8/2025/SETPYtYhNdRewQWH38U",
+    title: "Introduction To Css",
+    issuer: "My Skill COP",
+    level: "Beginner",
+    hash: "CSS...",
+    year: "2025 - 2028",
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 131741.png"],
   },
   {
     id: "0x3C4D",
