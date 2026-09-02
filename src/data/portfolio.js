@@ -118,21 +118,48 @@ export const projects = [
   },
   {
     id: "005",
-    title: "NEURAL NETWORK UI",
-    stack: ["REACT", "CSS"],
+    title: "E - COMMERCE",
+    stack: ["HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND'],
     description:
       "Experimental dashboard interface inspired by futuristic data visualization systems.",
     type: "UI",
-    documentation: [],
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 102104.png"],
   },
   {
     id: "006",
     title: "E-LIBRARY",
-    stack: ["LARAVEL", "MYSQL"],
+    stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
     description:
       "Digital library project for managing books, authors, genres, and uploaded cover images.",
     type: "FULL_STACK",
-    documentation: [],
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 102254.png"],
+  },
+  {
+    id: "007",
+    title: "Pay Roll App",
+    stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
+    description:
+      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+    type: "FULL_STACK",
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 102536.png"],
+  },
+  {
+    id: "008",
+    title: "Note Pad App",
+    stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
+    description:
+      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+    type: "FULL_STACK",
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 102634.png"],
+  },
+  {
+    id: "009",
+    title: "Note Pad App",
+    stack: ["LARAVEL", "MYSQL", "HTML", "CSS", "JS", 'BOOTSTRAP', 'TAILWIND', 'PHP'],
+    description:
+      "Digital library project for managing books, authors, genres, and uploaded cover images.",
+    type: "FULL_STACK",
+    documentation: ["/documentation/Cuplikan layar 2026-09-02 102725.png"],
   },
 ];
 
