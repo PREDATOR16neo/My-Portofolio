@@ -159,7 +159,7 @@ export const links = {
     description:
       "A web-based payroll system built to manage employee records, automate salary calculations, and generate financial reports.",
     type: "FULL_STACK",
-    link: githubRepo("pay-roll-app"),
+    link: githubRepo("Pay-Roll-Web-App-Project"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102536.png"],
   },
   {
@@ -169,7 +169,7 @@ export const links = {
     description:
       "A digital note-taking application that allows users to create, store, and seamlessly manage personal text notes with a responsive interface.",
     type: "FULL_STACK",
-    link: githubRepo("note-pad-app"),
+    link: githubRepo("Pay-Roll-Web-App-Project"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102634.png"],
   },
   {
@@ -179,7 +179,7 @@ export const links = {
     description:
       "A prototype dashboard application for small-scale server management, designed to monitor system status and display basic data visualizations.",
     type: "FULL_STACK",
-    link: githubRepo("mini-server-app"),
+    link: "https://rplb.my.id",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102725.png"],
   },
 ];
