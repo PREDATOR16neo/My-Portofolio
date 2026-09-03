@@ -20,22 +20,23 @@ export const profile = {
 export const skills = [
   { name: "FRONT_END", level: 85 },
   { name: "BACK_END", level: 60 },
-  { name: "SYSTEM_ADMIN", level: 45 },
+  { name: "FLUTTER", level: 20 },
 ];
 
 export const skillDetails = [
-  { name: "HTML", level: 90, color: "green" },
+  { name: "HTML", level: 85, color: "green" },
   { name: "CSS", level: 85, color: "cyan" },
   { name: "TAILWIND", level: 80, color: "green" },
-  { name: "JAVASCRIPT", level: 78, color: "cyan" },
-  { name: "REACT", level: 75, color: "green" },
-  { name: "PHP", level: 70, color: "cyan" },
-  { name: "NODE.JS", level: 65, color: "green" },
+  { name: "JAVASCRIPT", level: 65, color: "cyan" },
+  { name: "REACT", level: 30, color: "green" },
+  { name: "PHP", level: 65, color: "cyan" },
+  { name: "NODE.JS", level: 40, color: "green" },
   { name: "GIT", level: 80, color: "cyan" },
-  { name: "TERMINAL", level: 72, color: "green" },
-  { name: "LARAVEL", level: 75, color: "green" },
+  { name: "TERMINAL", level: 65, color: "green" },
+  { name: "LARAVEL", level: 80, color: "green" },
   { name: "MYSQL", level: 70, color: "cyan" },
-  { name: "LINUX", level: 65, color: "green" },
+  { name: "LINUX", level: 25, color: "green" },
+  { name: "FLUTTER", level: 20, color: "cyan" },
 ];
 
 export const technologies = [
@@ -49,6 +50,7 @@ export const technologies = [
   "MYSQL",
   "GIT",
   "LINUX",
+  "FLUTTER"
 ];
 
 export const experience = [
@@ -57,7 +59,7 @@ export const experience = [
     role: "Teacher",
     company: "SMA BUAH HATI",
     description:
-      "Learning software engineering, web development, databases, and modern application architecture.",
+      "Served as an instructor for a 5-day intensive web development training. Together with two co-instructors, we taught highly enthusiastic students how to build responsive, modern web layouts using HTML, CSS, and Tailwind CSS.",
     // Tambahkan foto dokumentasi nanti, contoh: ["/documentation/experience-idn-1.jpg"]
     documentation: ["/documentation/Cuplikan layar 2026-09-02 143932.png"],
   },
@@ -66,7 +68,7 @@ export const experience = [
     role: "Teacher",
     company: "ISLAMIC SCHOOL ADZKA",
     description:
-      "Built front-end interfaces and Laravel-based web applications while practicing clean UI and database integration.",
+      "Guided a 3-day introductory program on basic website creation. Alongside my team, I focused on mentoring students hands-on as they built simple web pages from scratch using HTML and CSS.",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 144050.png"],
   },
   {
@@ -74,20 +76,31 @@ export const experience = [
     role: "Teacher",
     company: "SMA MAN 4 JAKSEL",
     description:
-      "Exploring Linux, networking fundamentals, secure application practices, and basic system administration.",
+      "Delivered a 3-day comprehensive frontend development training. My team and I taught the integration of HTML, CSS, JavaScript, and Tailwind CSS, while directly helping students troubleshoot logical errors in their code.",
     documentation: ["/documentation/Cuplikan layar 2026-09-02 134859.png"],
   },
 ];
 
-export const projects = [
-  {
-    id: "001",
-    title: "PORTOFOLIO LAMINE YAMAL",
-    stack: ["HTML", "CSS"],
-    description:
-      "A frontend UI concept for a school management system, designed to organize student information and track attendance records.",
-    type: "WEB FRONT END",
-    documentation: ["/documentation/portfoliocanvaweb.jpg"],
+export const links = {
+  github: "https://github.com/PREDATOR16neo",
+  linkedin: "https://www.linkedin.com/in/naufal-hanif-idn",
+  whatsapp: "https://wa.me/6285397035348",
+  cv: "/CV Naufal Hanif 26 v2.pdf",
+};
+
+  const githubRepo = (repoName) =>
+    `https://github.com/PREDATOR16neo/${repoName}`;
+
+  export const projects = [
+    {
+      id: "001",
+      title: "PORTOFOLIO LAMINE YAMAL",
+      stack: ["HTML", "CSS"],
+      description:
+        "A frontend UI concept for a school management system, designed to organize student information and track attendance records.",
+      type: "WEB FRONT END",
+      link: githubRepo("YAMALPORTOFOLIO"),
+      documentation: ["/documentation/portfoliocanvaweb.jpg"],
   },
   {
     id: "002",
@@ -96,6 +109,7 @@ export const projects = [
     description:
       "A dark-themed landing page featuring a terminal-style interface and cybersecurity-inspired visuals.",
     type: "FRONT_END",
+    link: githubRepo("Zoro-Dealer-skl-2"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 100746.png"],
   },
   {
@@ -105,6 +119,7 @@ export const projects = [
     description:
       "A web application built with a unique terminal aesthetic to practice core JavaScript logic, command execution, and state handling.",
     type: "TOOL",
+    link: githubRepo("e-report-skl-3"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 100957.png"],
   },
   {
@@ -114,6 +129,7 @@ export const projects = [
     description:
       "An e-commerce architecture project focused on managing product catalogs, user accounts, shopping carts, and database relationships.",
     type: "FRONT END",
+    link: githubRepo("website-technology-store"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 101123.png"],
   },
   {
@@ -123,6 +139,7 @@ export const projects = [
     description:
       "An experimental dashboard interface designed with inspiration from futuristic data visualization systems.",
     type: "UI",
+    link: githubRepo("e-commerce"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102104.png"],
   },
   {
@@ -132,6 +149,7 @@ export const projects = [
     description:
       "A full-stack digital library application built to manage book catalogs, authors, genres, and cover image uploads.",
     type: "FULL_STACK",
+    link: githubRepo("e-library"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102254.png"],
   },
   {
@@ -141,6 +159,7 @@ export const projects = [
     description:
       "A web-based payroll system built to manage employee records, automate salary calculations, and generate financial reports.",
     type: "FULL_STACK",
+    link: githubRepo("pay-roll-app"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102536.png"],
   },
   {
@@ -150,6 +169,7 @@ export const projects = [
     description:
       "A digital note-taking application that allows users to create, store, and seamlessly manage personal text notes with a responsive interface.",
     type: "FULL_STACK",
+    link: githubRepo("note-pad-app"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102634.png"],
   },
   {
@@ -159,6 +179,7 @@ export const projects = [
     description:
       "A prototype dashboard application for small-scale server management, designed to monitor system status and display basic data visualizations.",
     type: "FULL_STACK",
+    link: githubRepo("mini-server-app"),
     documentation: ["/documentation/Cuplikan layar 2026-09-02 102725.png"],
   },
 ];
@@ -220,9 +241,3 @@ export const certificates = [
   },
 ];
 
-export const links = {
-  github: "https://github.com/PREDATOR16neo",
-  linkedin: "https://www.linkedin.com/in/naufal-hanif-idn",
-  whatsapp: "https://wa.me/6285397035348",
-  cv: "/CV Naufal Hanif 26 v2.pdf",
-};

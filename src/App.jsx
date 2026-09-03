@@ -277,6 +277,85 @@ function PageHeading({ command, title, description }) {
   );
 }
 
+function getVisibleProjects(items, showAll) {
+  return showAll ? items : items.slice(0, 3);
+}
+
+function toggleProjectList(showAll) {
+  return !showAll;
+}
+
+function openProjectSource(project) {
+  const sourceUrl = project?.link || project?.github || project?.repo || "";
+
+  if (!sourceUrl) return;
+
+  window.open(sourceUrl, "_blank", "noopener,noreferrer");
+}
+
+function openProjectDetails(setSelectedProject, project) {
+  setSelectedProject(project);
+}
+
+function closeProjectDetails(setSelectedProject) {
+  setSelectedProject(null);
+}
+
+function CertificateModal({ certificate, onClose }) {
+  if (!certificate) return null;
+
+  const imageUrl = certificate.documentation?.[0];
+
+  return (
+    <div className="project-modal-backdrop" onClick={onClose}>
+      <div
+        className="project-modal"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button
+          className="modal-close"
+          onClick={onClose}
+          aria-label="Close certificate detail"
+        >
+          ×
+        </button>
+
+        <div className="project-modal-visual">
+          {imageUrl ? (
+            <img src={imageUrl} alt={certificate.title} />
+          ) : (
+            <div className="project-modal-empty">CERTIFICATE_PREVIEW</div>
+          )}
+        </div>
+
+        <div className="project-modal-body">
+          <p className="green">[ CERTIFICATE_{certificate.id} ]</p>
+          <h2>{certificate.title}</h2>
+          <p>{certificate.issuer}</p>
+          <div className="project-modal-meta">
+            <span>{certificate.level}</span>
+            <span>{certificate.year}</span>
+          </div>
+
+          <div className="project-modal-actions">
+            <a
+              className="cyber-button full"
+              href={imageUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              ⌕ OPEN_FULL
+            </a>
+            <a className="cyber-button full cyan" href={imageUrl} download>
+              ↓ DOWNLOAD
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ProjectModal({ project, onClose }) {
   if (!project) return null;
 
@@ -324,14 +403,18 @@ function ProjectModal({ project, onClose }) {
 function Projects() {
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const visibleProjects = showAllProjects ? projects : projects.slice(0, 3);
+  const visibleProjects = getVisibleProjects(projects, showAllProjects);
+
+  const handleProjectOpen = (project) =>
+    openProjectDetails(setSelectedProject, project);
+  const handleProjectClose = () => closeProjectDetails(setSelectedProject);
+  const handleToggleProjects = () =>
+    setShowAllProjects((value) => toggleProjectList(value));
+  const handleProjectSource = (project) => openProjectSource(project);
 
   return (
     <main className="page">
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
+      <ProjectModal project={selectedProject} onClose={handleProjectClose} />
 
       <PageHeading
         command="root@sys:~/databases $ ./execute_query --target=quests"
@@ -370,7 +453,7 @@ function Projects() {
 
                 <button
                   className="source-button"
-                  onClick={() => setSelectedProject(project)}
+                  onClick={() => handleProjectSource(project)}
                 >
                   ▣ SOURCE_CODE
                 </button>
@@ -393,10 +476,7 @@ function Projects() {
       </div>
 
       <div className="center-button">
-        <button
-          className="cyber-button"
-          onClick={() => setShowAllProjects((value) => !value)}
-        >
+        <button className="cyber-button" onClick={handleToggleProjects}>
           [ {showAllProjects ? "SHOW_LESS" : "ANOTHER"} ]
         </button>
       </div>
@@ -406,12 +486,22 @@ function Projects() {
 
 function Certificates() {
   const [showAllCertificates, setShowAllCertificates] = useState(false);
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
   const visibleCertificates = showAllCertificates
     ? certificates
     : certificates.slice(0, 3);
 
+  const handleCertificateOpen = (certificate) =>
+    setSelectedCertificate(certificate);
+  const handleCertificateClose = () => setSelectedCertificate(null);
+
   return (
     <main className="page">
+      <CertificateModal
+        certificate={selectedCertificate}
+        onClose={handleCertificateClose}
+      />
+
       <PageHeading
         command="root@sys:~/vault $ decrypt --certificates"
         title="CERTIFICATE_VAULT_"
@@ -446,7 +536,6 @@ function Certificates() {
                   <strong>{certificate.year}</strong>
                 </div>
 
-
                 {certificate.documentation?.length > 1 && (
                   <div className="documentation-gallery">
                     {certificate.documentation
@@ -461,7 +550,10 @@ function Certificates() {
                   </div>
                 )}
 
-                <button className="cyber-button full">
+                <button
+                  className="cyber-button full"
+                  onClick={() => handleCertificateOpen(certificate)}
+                >
                   ⌕ VIEW_CERTIFICATE
                 </button>
               </div>

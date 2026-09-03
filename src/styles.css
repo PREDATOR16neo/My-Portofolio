@@ -1038,6 +1038,21 @@ body:hover .cursor-dot,
   text-transform: uppercase;
 }
 
+.project-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.project-modal-actions .cyber-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
